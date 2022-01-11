@@ -143,7 +143,7 @@ func (tx *dbTx) Commit(ctx context.Context) error {
 		return err
 	}
 	if string(commandTag) == "ROLLBACK" {
-		return ErrTxCommitRollback
+		return err
 	}
 
 	return nil
