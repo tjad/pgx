@@ -7,8 +7,8 @@ import (
 	"os"
 	"testing"
 
-	"github.com/jackc/pgx/v4"
-	"github.com/jackc/pgx/v4/stdlib"
+	"github.com/tjad/pgx/v4"
+	"github.com/tjad/pgx/v4/stdlib"
 )
 
 func openDB(t *testing.T) *sql.DB {

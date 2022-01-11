@@ -5,7 +5,7 @@ import (
 	"testing"
 
 	"github.com/jackc/pgconn"
-	"github.com/jackc/pgx/v4"
+	"github.com/tjad/pgx/v4"
 	"github.com/stretchr/testify/require"
 )
 

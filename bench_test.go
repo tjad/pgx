@@ -13,7 +13,7 @@ import (
 	"github.com/jackc/pgconn"
 	"github.com/jackc/pgconn/stmtcache"
 	"github.com/jackc/pgtype"
-	"github.com/jackc/pgx/v4"
+	"github.com/tjad/pgx/v4"
 )
 
 func BenchmarkMinimalUnpreparedSelectWithoutStatementCache(b *testing.B) {

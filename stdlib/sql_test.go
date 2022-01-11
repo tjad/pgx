@@ -13,8 +13,8 @@ import (
 	"time"
 
 	"github.com/jackc/pgconn"
-	"github.com/jackc/pgx/v4"
-	"github.com/jackc/pgx/v4/stdlib"
+	"github.com/tjad/pgx/v4"
+	"github.com/tjad/pgx/v4/stdlib"
 )
 
 func closeDB(t *testing.T, db *sql.DB) {
@@ -1114,7 +1114,7 @@ func TestSimpleQueryLifeCycle(t *testing.T) {
 	ensureConnValid(t, db)
 }
 
-// https://github.com/jackc/pgx/issues/409
+// https://github.com/tjad/pgx/issues/409
 func TestScanJSONIntoJSONRawMessage(t *testing.T) {
 	db := openDB(t)
 	defer closeDB(t, db)
